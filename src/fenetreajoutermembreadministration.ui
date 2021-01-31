@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FenetreAjouterMembreAdministration</class>
+ <widget class="QWidget" name="FenetreAjouterMembreAdministration">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>698</width>
+    <height>448</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>FenetreAjouterMembreAdministration</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton#boutonAjouterAmphi{
+	font: 75 14pt &quot;Tw Cen MT&quot;;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	background-color: rgb(55, 94, 173);
+	color: #fff;
+}
+
+QPushButton#boutonAjouterAmphi:hover {
+	background-color: rgb(47, 80, 147);
+}
+
+QMessageBox { 
+	font-size: 15px;
+ }
+
+QLabel {
+	font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+	font-weight: bold;
+	text-align: center;
+}
+
+QLineEdit {
+     border: 1px solid gray;
+     border-radius: 3px;
+     padding: 1px 18px 1px 3px;
+     min-width: 6em;
+ }
+</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="groupBoxAjouterMembreAdministration">
+     <property name="maximumSize">
+      <size>
+       <width>500</width>
+       <height>200</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#boutonAjouterMembreAdministration{
+	font: 75 14pt &quot;Tw Cen MT&quot;;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	background-color: rgb(55, 94, 173);
+	color: #fff;
+}
+
+QPushButton#boutonAjouterMembreAdministration:hover {
+	background-color: rgb(47, 80, 147);
+}
+
+QMessageBox { 
+	font-size: 15px;
+ }
+
+QLabel {
+	font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+	font-weight: bold;
+	text-align: center;
+}</string>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <layout class="QFormLayout" name="formLayout">
+          <property name="horizontalSpacing">
+           <number>27</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QLabel" name="labelNom">
+            <property name="text">
+             <string>Nom du Membre :</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="lineEditNom">
+            <property name="minimumSize">
+             <size>
+              <width>101</width>
+              <height>25</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="labelPrenom">
+            <property name="text">
+             <string>Prenom du Membre : </string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="lineEditPrenom">
+            <property name="minimumSize">
+             <size>
+              <width>101</width>
+              <height>25</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="labelLogin">
+            <property name="text">
+             <string>Login du Membre :</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="labelMotDePasse">
+            <property name="text">
+             <string>Mot de Passe du Membre :</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLineEdit" name="lineEditLogin">
+            <property name="minimumSize">
+             <size>
+              <width>101</width>
+              <height>25</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QLineEdit" name="lineEditMotDePasse">
+            <property name="minimumSize">
+             <size>
+              <width>101</width>
+              <height>25</height>
+             </size>
+            </property>
+            <property name="echoMode">
+             <enum>QLineEdit::PasswordEchoOnEdit</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Maximum</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>15</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="boutonAjouterMembreAdministration">
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Ajouter</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

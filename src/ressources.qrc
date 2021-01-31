@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/imgs">
+        <file>images/profilAuthentifier.png</file>
+        <file>images/yeux.png</file>
+        <file>images/admin.png</file>
+        <file>images/flecheBas.png</file>
+        <file>images/flecheHaut.png</file>
+        <file>images/logo.png</file>
+        <file>images/logo.ico</file>
+    </qresource>
+</RCC>

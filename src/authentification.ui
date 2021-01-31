@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Authentification</class>
+ <widget class="QWidget" name="Authentification">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>297</width>
+    <height>364</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Authentification</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">Authentification {
+	background-color: rgb(249, 249, 249);
+}
+
+QLineEdit {
+	font-size: 14px;
+	color: #555;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	padding: 6px 12px;
+}
+
+QLineEdit:focus {
+	border: 2px solid rgb(85, 170, 255);
+}
+
+QPushButton#boutonValider {
+	font: 75 14pt &quot;Tw Cen MT&quot;;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	background-color: rgb(55, 94, 173);
+	color: #fff;
+}
+
+QPushButton#boutonValider:hover {
+	background-color: rgb(47, 80, 147);
+}
+
+QPushButton#boutonVoirMotDePasse {
+	font: 75 14pt &quot;Tw Cen MT&quot;;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	color: #fff;
+	background-color: white;
+}
+
+QPushButton#boutonVoirMotDePasse:hover {
+	background-color: rgb(226, 226, 226);
+}
+
+QLabel#labelTitre {
+	font-size: 18px;
+	font-family: Verdana;
+	font-weight: 500;
+	text-align: center;
+}
+
+QMessageBox { 
+	font-size: 15px;
+ }</string>
+  </property>
+  <widget class="QLabel" name="labelImage">
+   <property name="geometry">
+    <rect>
+     <x>31</x>
+     <y>-32</y>
+     <width>241</width>
+     <height>241</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="ressources.qrc">:/imgs/images/profilAuthentifier.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditLogin">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>200</y>
+     <width>161</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="placeholderText">
+    <string>Login</string>
+   </property>
+   <property name="clearButtonEnabled">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="boutonValider">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>310</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Tw Cen MT</family>
+     <pointsize>14</pointsize>
+     <weight>9</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>S'authentifier</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>100</width>
+     <height>1000</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditMotDePasse">
+   <property name="geometry">
+    <rect>
+     <x>62</x>
+     <y>249</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
+   <property name="placeholderText">
+    <string>Mot de Passe</string>
+   </property>
+   <property name="clearButtonEnabled">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="boutonVoirMotDePasse">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>250</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="ressources.qrc">
+     <normaloff>:/imgs/images/yeux.png</normaloff>:/imgs/images/yeux.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>20</width>
+     <height>20</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelTitre">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>140</y>
+     <width>161</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Authentification</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="ressources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

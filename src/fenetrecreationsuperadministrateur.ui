@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FenetreCreationSuperAdministrateur</class>
+ <widget class="QWidget" name="FenetreCreationSuperAdministrateur">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>380</width>
+    <height>520</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">FenetreCreationSuperAdministrateur {
+	background-color: rgb(249, 249, 249);
+}
+
+QLineEdit {
+	font-size: 14px;
+	color: #555;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	padding: 6px 12px;
+}
+
+QLineEdit:focus {
+	border: 2px solid rgb(85, 170, 255);
+}
+
+QPushButton#boutonValider {
+	font: 75 14pt &quot;Tw Cen MT&quot;;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	background-color: #0aac55;
+	color: #fff;
+}
+
+QPushButton#boutonValider:hover {
+	background-color: #08a24e;
+}
+
+QPushButton#boutonVoirMotDePasse {
+	font: 75 14pt &quot;Tw Cen MT&quot;;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	color: #fff;
+	background-color: white;
+}
+
+QPushButton#boutonVoirMotDePasse:hover {
+	background-color: rgb(226, 226, 226);
+}
+
+QLabel#labelTitre {
+	font-size: 18px;
+	font-family: Verdana;
+	font-weight: 700;
+	text-align: center;
+}
+
+QMessageBox { 
+	font-size: 15px;
+ }</string>
+  </property>
+  <widget class="QPushButton" name="boutonValider">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>460</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Valider</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelImage">
+   <property name="geometry">
+    <rect>
+     <x>125</x>
+     <y>19</y>
+     <width>121</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="ressources.qrc">:/imgs/images/admin.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelTitre">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>147</y>
+     <width>301</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Création du 
+Super-Administrateur</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="boutonVoirMotDePasse">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>350</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="ressources.qrc">
+     <normaloff>:/imgs/images/yeux.png</normaloff>:/imgs/images/yeux.png</iconset>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>220</y>
+     <width>231</width>
+     <height>211</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="2" column="0">
+     <widget class="QLineEdit" name="lineEditLogin">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>Votre Login</string>
+      </property>
+      <property name="clearButtonEnabled">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLineEdit" name="lineEditPrenom">
+      <property name="placeholderText">
+       <string>Votre Prénom</string>
+      </property>
+      <property name="clearButtonEnabled">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLineEdit" name="lineEditMotDePasse">
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
+      <property name="placeholderText">
+       <string>Votre Mot de Passe</string>
+      </property>
+      <property name="clearButtonEnabled">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLineEdit" name="lineEditNom">
+      <property name="placeholderText">
+       <string>Votre Nom</string>
+      </property>
+      <property name="clearButtonEnabled">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLineEdit" name="lineEditConfirmationMotDePasse">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
+      <property name="placeholderText">
+       <string>Confirmer le Mot de Passe</string>
+      </property>
+      <property name="clearButtonEnabled">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="ressources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
